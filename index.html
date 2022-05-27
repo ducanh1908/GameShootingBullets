@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Shooting Bullets</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main">
+    <div class="header">
+        <marquee class="heading" width ="400" heigth = "40">Game Shooting Bullets </marquee>
+
+        <span class="score">SCORES :<span id="scores"></span></span>
+    </div>
+    <div class="wrap">
+
+            <img src="img/vu_no.png" alt="" id="vu_no" style="display: none">
+            <img src="img/tau.png" alt="" id="player" style="display: none">
+            <img src="img/vutru.png" alt="" id="enemy" style="display: none">
+            <canvas id="canvas"></canvas>
+
+    </div>
+    <div class="start">
+        <button type="button" class="btn btn-primary" id="btn_start">START</button>
+        <button type="button" class="btn btn-primary" id="btn_reset">RESET</button>
+    </div>
+</div>
+
+
+<script src="Player.js"></script>
+<script src="BulletController.js"></script>
+<script src="Bullet.js"></script>
+<script src="Enemy.js"></script>
+<script src="Particle.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
